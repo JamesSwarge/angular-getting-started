@@ -7,6 +7,7 @@
         },
         map: {
             "src": "src",
+            "api": "api",
             "@angular/core": 'npm@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm@angular/common/bundles/common.umd.js',
             '@angular/compiler': 'npm@angular/compiler/bundles/compiler.umd.js',
@@ -21,6 +22,9 @@
             'typescript': 'npm@typescript@2.0.3/lib/typescript.js'
         },
         packages: {
+            api: {
+                defaultExtension: "json"
+            },
             src: {
                 main: "./main.ts",
                 defaultExtension: "js"

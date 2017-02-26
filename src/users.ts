@@ -11,8 +11,11 @@ export class Users {
     public users: Array<any> = [];
     constructor(router: Router, userService: UserService) {
         this.router = router;
-        //let userService = new UserService();
-        this.users = userService.getUsers();
+        let self = this;
+        userService.getUsers().then(function (users: Array<any>) {
+            self.users = users;
+        })
+            .error((error: any) => console.log(error));
     }
     public onEditUserClicked(userId: string) {
         this.router.navigate(["/editUser", userId]);

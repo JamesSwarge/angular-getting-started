@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
+import {HttpModule} from "@angular/http";
 import { RouterModule } from "@angular/router";
 import { DefaultLayout } from "./defaultLayout";
 import { DefaultPage } from "./defaultPage";
@@ -14,7 +15,7 @@ import {RedColor} from "./redColor";
 import {FormInput}  from "./formInput";
 import {Page} from "./page";
 @NgModule({
-    imports: [BrowserModule, FormsModule, RouterModule, RouteConfig],
+    imports: [BrowserModule, FormsModule, RouterModule, RouteConfig, HttpModule],
     declarations: [DefaultLayout, DefaultPage, Users, AddNewUser, EditUser, UserSummary, RedColor, FormInput, Page],
     bootstrap: [DefaultLayout],
     providers:[],
