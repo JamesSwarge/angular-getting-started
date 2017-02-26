@@ -1,4 +1,5 @@
 <div class="x_panel">
+    
     <div class="x_title">
         <h2>Users</h2>
         <div class="clearfix"></div>
@@ -30,7 +31,8 @@
                 </tr>
             </tbody>
         </table>
-        <user-summary (onFirstNameChanged)="onFirstNameChanged($event)" [firstName]=selectedUser.firstName></user-summary>
+        <!--<user-summary (onFirstNameChanged)="onFirstNameChanged($event)" [firstName]=selectedUser.firstName></user-summary>-->
+        <user-summary [(firstName)]=selectedUser.firstName></user-summary>
         <label *ngIf="selectedUser">First name of selected user:{{selectedUser.firstName}}</label>
     </div>
 </div>
