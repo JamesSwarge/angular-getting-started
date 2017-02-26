@@ -12,39 +12,25 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Username</th>
+                    <th>Photo</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                <tr *ngFor="let user of users">
+                    <td>{{user.firstName}}</td>
+                    <td [redColor]="'red'">{{user.lastName}}</td>
+                    <td>{{user.userName}}</td>
+                    <td><img alt="avatar" style="max-width:200px;max-height:200px" src="/src/resources/images/{{user.avatar}}"
+                        /></td>
                     <td>
-                        <a (click)="onEditUserClicked(1)" title="Edit user">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>
-                        <a (click)="onEditUserClicked(2)" title="Edit user">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>
-                        <a (click)="onEditUserClicked(2)" title="Edit user">edit</a>
+                        <a (click)="onEditUserClicked(user.id)" title="Edit user">Edit</a>
+                        <a (click)="onSummaryClicked(user)" title="Show Summary">Summary</a>
                     </td>
                 </tr>
             </tbody>
         </table>
-
+        <user-summary (onFirstNameChanged)="onFirstNameChanged($event)" [firstName]=selectedUser.firstName></user-summary>
+        <label *ngIf="selectedUser">First name of selected user:{{selectedUser.firstName}}</label>
     </div>
 </div>
