@@ -9,9 +9,10 @@ import {BasePage} from "./basePage";
 export class Users extends BasePage {
     public selectedUser: any = {};
     public users: Array<any> = [];
-    constructor(router: Router, userService: UserService) {
+    constructor(router: Router) {
         super(router);
         let self = this;
+        let userService = window.ioc.resolve("userService");
         userService.getUsers().then(function (users: Array<any>) {
             self.users = users;
         })
