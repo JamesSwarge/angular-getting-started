@@ -1,6 +1,5 @@
-﻿namespace API.Context
+﻿namespace Api.Context
 {
-    using API.Models;
     using System.Data.Entity;
     public class DbContext : System.Data.Entity.DbContext
     {

@@ -1,9 +1,9 @@
-﻿namespace API.Repositories
+﻿namespace Api.Repository.Impl
 {
     using System.Collections.Generic;
-    using API.Models;
-    using Context;
+    using Api.Context;
     using System.Linq;
+    using System;
 
     public class UserRepository : IUserRepository
     {
@@ -17,9 +17,15 @@
             return this.context.Users.ToList();
         }
 
-        public void CreateUser(User user) {
+        public void CreateUser(User user)
+        {
             this.context.Users.Add(user);
             this.context.SaveChanges();
+        }
+
+        public User GetUserByUserName(string userName)
+        {
+            return this.context.Users.FirstOrDefault(user => user.UserName == userName);
         }
     }
 }

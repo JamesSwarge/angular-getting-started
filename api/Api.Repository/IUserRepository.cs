@@ -1,10 +1,11 @@
-﻿namespace API.Repositories
+﻿namespace Api.Repository
 {
     using System.Collections.Generic;
-    using API.Models;
+    using Api.Context;
     public interface IUserRepository
     {
         IList<User> GetUsers();
         void CreateUser(User user);
+        User GetUserByUserName(string userName);
     }
 }

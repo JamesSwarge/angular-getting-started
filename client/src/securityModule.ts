@@ -9,12 +9,12 @@ import { RouteConfig } from "./routeConfig";
 import { Users } from "./users";
 import { AddNewUser } from "./addNewUser";
 import { EditUser } from "./editUser";
-import { UserService } from "./userService";
+// import { UserService } from "./userService";
 import { UserSummary } from "./userSummary";
 import { RedColor } from "./redColor";
 import { FormInput } from "./formInput";
 import { Page } from "./page";
-import { HttpConnector } from "./httpConnector";
+// import { HttpConnector } from "./httpConnector";
 import { FormButton } from "./formButton";
 import { FormPrimaryButton } from "./formPrimaryButton";
 import { HorizalForm } from "./horizalForm";
@@ -25,7 +25,7 @@ import { HorizalForm } from "./horizalForm";
         UserSummary, RedColor, FormInput, Page, FormButton, HorizalForm, FormPrimaryButton
     ],
     bootstrap: [DefaultLayout],
-    providers: [HttpConnector, UserService],
+    providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class SecurityModule { }

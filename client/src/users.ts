@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import { UserService } from "./userService";
+import { IUserService } from "./iuserService";
 import {BasePage} from "./basePage";
+import {IoCNames} from "./enum";
+
 @Component({
-    templateUrl: "src/users.html",
-    providers: [UserService]
+    templateUrl: "src/users.html"
 })
 export class Users extends BasePage {
     public selectedUser: any = {};
@@ -12,11 +13,10 @@ export class Users extends BasePage {
     constructor(router: Router) {
         super(router);
         let self = this;
-        let userService = window.ioc.resolve("userService");
+        let userService: IUserService = window.ioc.resolve(IoCNames.IUserService);
         userService.getUsers().then(function (users: Array<any>) {
             self.users = users;
-        })
-            .error((error: any) => console.log(error));
+        });
     }
     public onEditUserClicked(userId: string) {
         this.navigate("/editUser", userId);
