@@ -1,4 +1,5 @@
+//app/modules/security/module#SecurityModule
 let modules: Array<any> = [
-    { urlPrefix: "security", path: "app/modules/security/module#SecurityModule" }
+    { urlPrefix: "security", path: "security" }
 ];
 export default modules;

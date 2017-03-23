@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { Users } from "./user/users";
-import {CommonModule} from "../common/module";
-import {AddNewUser} from "./user/addNewUser";
+import { CommonModule } from "../common/module";
+import { AddNewUser } from "./user/addNewUser";
 
 let routes: Routes = [
     { path: "users", component: Users },
@@ -10,7 +10,7 @@ let routes: Routes = [
 ];
 @NgModule({
     imports: [CommonModule, RouterModule.forChild(routes)],
-    declarations:[Users, AddNewUser],
+    declarations: [Users, AddNewUser],
     exports: [RouterModule]
 })
 export class SecurityModule { }
