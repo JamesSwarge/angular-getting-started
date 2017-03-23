@@ -12,15 +12,17 @@ const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
 const users_1 = require("./user/users");
 const module_1 = require("../common/module");
+const addNewUser_1 = require("./user/addNewUser");
 let routes = [
-    { path: "users", component: users_1.Users }
+    { path: "users", component: users_1.Users },
+    { path: "addNewUser", component: addNewUser_1.AddNewUser }
 ];
 let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     core_1.NgModule({
         imports: [module_1.CommonModule, router_1.RouterModule.forChild(routes)],
-        declarations: [users_1.Users],
+        declarations: [users_1.Users, addNewUser_1.AddNewUser],
         exports: [router_1.RouterModule]
     }), 
     __metadata('design:paramtypes', [])
