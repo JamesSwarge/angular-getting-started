@@ -7,6 +7,7 @@ import appConfig from "./config/appConfig";
         BrowserModule,
         RouterModule.forRoot(appConfig.routes)
     ],
+    declarations:[appConfig.layout],
     bootstrap:[appConfig.layout]
 })
 export class Application{}

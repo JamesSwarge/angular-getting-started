@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-@Component({
-    templateUrl: "src/editUser.html"
-})
-export class EditUser { }
+// import { Component } from "@angular/core";
+// @Component({
+//     templateUrl: "src/editUser.html"
+// })
+// export class EditUser { }
