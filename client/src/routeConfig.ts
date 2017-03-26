@@ -5,7 +5,7 @@ import { Users } from "./users";
 import { AddNewUser } from "./addNewUser";
 import { EditUser } from "./editUser";
 let routes: Routes = [
-    { path: "", component: DefaultPage },
+    { path: "", redirectTo:"users", pathMatch:"full" },
     { path: "users", component: Users },
     { path: "addNewUser", component: AddNewUser },
     { path: "editUser/:userId", component: EditUser }

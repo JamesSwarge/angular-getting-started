@@ -8,6 +8,7 @@ import appHelper from "./appHelper";
 
 export class HttpConnector implements IConnector {
     public get(url: string): Promise {
+        console.log("HttpConnector");
         let http: Http = appHelper.injector.get(Http);
         let rootUrl = appConfig.rootApi;
         url = rootUrl + url;

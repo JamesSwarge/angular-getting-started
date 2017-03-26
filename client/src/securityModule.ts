@@ -1,8 +1,9 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
+import { HttpModule, Http } from "@angular/http";
 import { RouterModule } from "@angular/router";
+import {ReflectiveInjector} from "@angular/core";
 import { DefaultLayout } from "./defaultLayout";
 import { DefaultPage } from "./defaultPage";
 import { RouteConfig } from "./routeConfig";
@@ -28,4 +29,7 @@ import { HorizalForm } from "./horizalForm";
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
-export class SecurityModule { }
+export class SecurityModule {
+    constructor(){
+    }
+}
