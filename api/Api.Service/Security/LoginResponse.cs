@@ -1,6 +1,8 @@
-﻿namespace Api.Service
+﻿using Api.Common.Models;
+
+namespace Api.Service
 {
-    public class LoginResponse
+    public class LoginResponse: IEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
