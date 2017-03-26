@@ -6,7 +6,7 @@ export class UserService implements IUserService {
     private iconnector: IConnector;
     public getUsers(): Promise {
         let iconnector: IConnector = window.ioc.resolve(IoCNames.IConnector);
-        return iconnector.get("/users");
+        return iconnector.get("/users.json");
     }
     public createUser(user: any): Promise {
         let iconnector: IConnector = window.ioc.resolve(IoCNames.IConnector);
