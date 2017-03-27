@@ -4,10 +4,12 @@ import { FormsModule } from "@angular/forms";
 
 import { DefaultPage } from "./defaultPage";
 import { SecurityRoute } from "./securityRoute";
-import {Users} from "./users";
+import { Users } from "./users";
+import { UserSummary } from "./userSummary";
+
 @NgModule({
     imports: [BrowserModule, FormsModule, SecurityRoute],
-    declarations: [DefaultPage, Users],
+    declarations: [DefaultPage, Users, UserSummary],
     bootstrap: [DefaultPage]
 })
 export class SecurityModule { }
