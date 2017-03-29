@@ -1,10 +1,6 @@
-<div class="x_panel">
-	<div class="x_title">
-		<h2>Users</h2>
-
-		<div class="clearfix"></div>
-	</div>
-	<div class="x_content">
+<page>
+	<page-header>Users</page-header>
+	<page-content>
 		<table class="table">
 			<thead>
 				<tr>
@@ -23,11 +19,7 @@
 				</tr>
 			</tbody>
 		</table>
-		
-		<user-summary
 
-		[(firstName)]="selectedUser.firstName"
-
-		*ngIf="selectedUser"></user-summary>
-	</div>
-</div>
+		<!--<user-summary [(firstName)]="selectedUser.firstName" *ngIf="selectedUser"></user-summary>-->
+	</page-content>
+</page>

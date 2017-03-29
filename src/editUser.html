@@ -1,0 +1,11 @@
+<page>
+	<page-header>Edit User</page-header>
+	<page-content>
+		<horizontal-form>
+			<form-input label="First Name" [(value)]=model.firstName> </form-input>
+			<form-input label="Last Name" [(value)]=model.lastName></form-input>
+			<form-button-primary label="Save" (click)="onSaveClicked()"></form-button-primary>
+			<form-button-default label="Cancel" (onClick)="onCancelClicked()"></form-button-default>
+		</horizontal-form>
+	</page-content>
+</page>
