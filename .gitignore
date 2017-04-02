@@ -20,3 +20,12 @@ api/Api.Common/bin/
 *.suo
 api/API/obj/
 client/npm-debug.log.863437081
+api/WebApplication1/
+api/App.Repository/bin/
+api/App.Repository/obj/
+api/App.Service.Impl/bin/
+api/App.Repository.Impl/obj/
+api/App.Repository.Impl/bin/
+api/App.Context/bin/
+api/App.Context/obj/
+api/App.Service.Impl/obj/

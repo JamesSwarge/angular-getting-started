@@ -4,12 +4,10 @@ import "rxjs/add/operator/map";
 import { IConnector } from "./iconnector";
 import { Promise, PromiseFactory } from "./promise";
 import appConfig from "./appConfig";
-import appHelper from "./appHelper";
 
 export class HttpConnector implements IConnector {
     public get(url: string): Promise {
-        console.log("HttpConnector");
-        let http: Http = appHelper.injector.get(Http);
+        let http: Http = window.ioc.resolve(Http);
         let rootUrl = appConfig.rootApi;
         url = rootUrl + url;
         let def = PromiseFactory.create();

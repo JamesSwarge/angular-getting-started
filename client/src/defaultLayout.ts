@@ -1,5 +1,6 @@
 import { Component, ApplicationRef } from "@angular/core";
-import appHelper from "./appHelper";
+//import appHelper from "./appHelper";
+import appHelper from "./modules/common/index";
 @Component({
     selector:"default-layout",
     templateUrl: "src/defaultLayout.html"
