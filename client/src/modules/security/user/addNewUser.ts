@@ -1,10 +1,10 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import { UserService } from "./userService";
+import { UserService } from "../../../modules/security/_share/services/userService";
 import { AddNewUserModel } from "./addNewUserModel";
-import { BasePage } from "./basePage";
+import { BasePage } from "../../../modules/common/index";
 @Component({
-    templateUrl: "src/addNewUser.html",
+    templateUrl: "src/modules/security/user/addNewUser.html",
 })
 export class AddNewUser extends BasePage {
     private userService: UserService;

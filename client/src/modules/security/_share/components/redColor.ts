@@ -8,7 +8,6 @@ export class RedColor implements AfterViewInit {
     private ui: ElementRef;
     constructor(ui: ElementRef) {
         this.ui = ui;
-        //ui.nativeElement.style.backgroundColor=this.color;
     }
     ngAfterViewInit() {
         this.ui.nativeElement.style.backgroundColor = this.defaultColor == "" ? this.color : this.defaultColor;
