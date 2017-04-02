@@ -4,6 +4,8 @@ src/**/*.js
 !resources
 packages/
 *.sou
+api/**/obj/
+api/**/bin/
 api/Api.Service.Impl/bin/
 api/Api.Repository/obj/
 api/Api.Repository/bin/
@@ -29,3 +31,5 @@ api/App.Repository.Impl/bin/
 api/App.Context/bin/
 api/App.Context/obj/
 api/App.Service.Impl/obj/
+App.Service/bin/
+App.Service/obj/
