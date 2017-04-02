@@ -1,7 +1,7 @@
-import { PromiseFactory, Promise } from "./promise";
-import { IConnector } from "./iconnector";
+import { PromiseFactory, Promise } from "./modules/common/index";
+import { IConnector } from "./modules/common/index";
 import { IUserService } from "./iuserService";
-import { IoCNames } from "./enum";
+import { IoCNames } from "./modules/common/index";
 export class UserService implements IUserService {
     private iconnector: IConnector;
     public getUsers(): Promise {

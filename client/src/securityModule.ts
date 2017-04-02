@@ -11,23 +11,12 @@ import { RouteConfig } from "./routeConfig";
 import { Users } from "./users";
 import { AddNewUser } from "./addNewUser";
 import { EditUser } from "./editUser";
-// import { UserService } from "./userService";
 import { UserSummary } from "./userSummary";
 import { RedColor } from "./redColor";
-//import { FormInput } from "./formInput";
-
-//import { Page } from "./page";
-//import appHelper from "./appHelper";
-//import appHelper from "./modules/common";
-// import { HttpConnector } from "./httpConnector";
-//import { FormButton } from "./formButton";
-//import { FormPrimaryButton } from "./formPrimaryButton";
-//import { HorizalForm } from "./horizalForm";
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule, CommonModule, RouterModule, RouteConfig],
     declarations: [
-        DefaultLayout, DefaultPage, Users, AddNewUser, EditUser, 
-        UserSummary, RedColor /*, FormInput, FormButton, HorizalForm, FormPrimaryButton*/
+        DefaultLayout, DefaultPage, Users, AddNewUser, EditUser,UserSummary, RedColor
     ],
     bootstrap: [DefaultLayout],
     providers: [],

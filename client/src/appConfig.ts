@@ -1,5 +1,7 @@
-import { HttpConnector } from "./httpConnector";
-import { IoCNames, IoCLifeCycle } from "./enum";
+//import { HttpConnector } from "./httpConnector";
+import { HttpConnector } from "./modules/common/index";
+//import { IoCNames, IoCLifeCycle } from "./enum";
+import { IoCNames, IoCLifeCycle } from "./modules/common/index";
 import { UserService } from "./userService";
 let appConfig = {
     rootApi: "http://localhost:3000/api/",

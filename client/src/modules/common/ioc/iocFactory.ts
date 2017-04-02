@@ -3,7 +3,7 @@ import {SingletonObjectBuilder} from "./builder/singletonObjectBuilder";
 import {TransientObjectBuilder} from "./builder/transientObjectBuilder";
 import {IObjectBuilder} from "./builder/iobjectBuilder";
 //import appHelper from "./appHelper";
-import appHelper from "./modules/common/index"; 
+import appHelper from "../helpers/appHelper"; 
 export class IoCFactory {
     public static create(): IocContainer {
         return new IocContainer();

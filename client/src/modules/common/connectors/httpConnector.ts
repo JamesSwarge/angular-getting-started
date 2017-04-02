@@ -2,13 +2,14 @@ import { Injectable } from "@angular/core";
 import { Http, Response } from "@angular/http";
 import "rxjs/add/operator/map";
 import { IConnector } from "./iconnector";
-import { Promise, PromiseFactory } from "./promise";
-import appConfig from "./appConfig";
+import { Promise, PromiseFactory } from "./../models/promise";
+//import appConfig from "./appConfig";
+import appHelper from "./../helpers/appHelper";
 
 export class HttpConnector implements IConnector {
     public get(url: string): Promise {
         let http: Http = window.ioc.resolve(Http);
-        let rootUrl = appConfig.rootApi;
+        let rootUrl = appHelper.config.rootApi;
         url = rootUrl + url;
         let def = PromiseFactory.create();
         http.get(url)

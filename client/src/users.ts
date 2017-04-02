@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { IUserService } from "./iuserService";
-import {BasePage} from "./basePage";
-import {IoCNames} from "./enum";
+import { BasePage } from "./modules/common/index";
+import { IoCNames } from "./modules/common/index";
 
 @Component({
     templateUrl: "src/users.html"

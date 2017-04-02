@@ -1,6 +1,7 @@
 import { Component, ApplicationRef } from "@angular/core";
 //import appHelper from "./appHelper";
-import appHelper from "./modules/common/index";
+import helperFacade from "./modules/common/index";
+import appConfig from "./appConfig";
 @Component({
     selector:"default-layout",
     templateUrl: "src/defaultLayout.html"
@@ -8,6 +9,7 @@ import appHelper from "./modules/common/index";
 export class DefaultLayout {
     constructor(app: ApplicationRef){
         let injector = app["_injector"];
-        appHelper.setInjector(injector);
+        helperFacade.appHelper.setInjector(injector);
+        helperFacade.appHelper.setConfig(appConfig);
     }
 }
