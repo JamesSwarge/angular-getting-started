@@ -1,6 +1,6 @@
 node_modules/
-src/**/*.js.map
-src/**/*.js
+client/src/**/*.js.map
+client/src/**/*.js
 !resources
 packages/
 *.sou
@@ -33,3 +33,5 @@ api/App.Context/obj/
 api/App.Service.Impl/obj/
 App.Service/bin/
 App.Service/obj/
+client/src/**/*.js
+api/Api.Common/StyleCop.Cache
