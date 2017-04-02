@@ -1,6 +1,6 @@
 node_modules/
-src/*.js.map
-src/*.js
+src/**/*.js.map
+src/**/*.js
 !resources
 packages/
 *.sou
