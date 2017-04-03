@@ -7,7 +7,7 @@ import { IoCNames } from "../../../modules/common/index";
 @Component({
     templateUrl: "src/modules/security/user/users.html"
 })
-export class Users extends BasePage {
+export class Users extends BasePage<any> {
     public selectedUser: any = {};
     public users: Array<any> = [];
     constructor(router: Router) {

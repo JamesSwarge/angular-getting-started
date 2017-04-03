@@ -1,9 +1,13 @@
 export const IoCNames = {
-    IUserService: "iuserService",
-    IConnector: "iconnector"
+    IUserService: "IUserService",
+    IConnector: "IConnector",
+    IEventManager: "IEventManager",
+    IResource: "IResource",
+    ILogger: "ILogger",
+    ISettingService: "ISettingService"
 };
 
 export enum IoCLifeCycle {
-    Transient,
-    Singleton
+    Transient = 1,
+    Singleton = 2
 }

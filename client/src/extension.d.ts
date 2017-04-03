@@ -1,5 +1,6 @@
 declare interface Window {
     ioc: any;
+    jQuery: any;
 }
 
 interface StringConstructor {

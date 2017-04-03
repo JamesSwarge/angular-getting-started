@@ -9,9 +9,10 @@ import { FormInput } from "./components/formInput";
 import { FormButton } from "./components/formButton";
 import { Style } from "./components/style";
 import { Script } from "./components/script";
+import { Grid } from "./components/grid/grid";
 @NgModule({
     imports: [FormsModule, HttpModule, RouterModule],
-    declarations: [Page, HorizalForm, FormPrimaryButton, FormInput, FormButton, Style, Script],
-    exports: [FormsModule, HttpModule, RouterModule, Page, HorizalForm, FormPrimaryButton, FormInput, Style, Script]
+    declarations: [Page, HorizalForm, FormPrimaryButton, FormInput, FormButton, Style, Script, Grid],
+    exports: [FormsModule, HttpModule, RouterModule, Page, HorizalForm, FormPrimaryButton, FormInput, Style, Script, Grid]
 })
 export class AppCommon { }

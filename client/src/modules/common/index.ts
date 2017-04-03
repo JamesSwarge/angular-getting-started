@@ -4,11 +4,14 @@ export * from "./ioc/enum";
 export * from "./connectors/httpConnector";
 export * from "./connectors/iconnector";
 export * from "./models/promise";
-export * from "./models/basePage";
-export * from "./application/iapplication";
-
+export * from "./models/ui";
+export * from "./application/iappConfig";
+export * from "./enum";
+export * from "./services/logger/consoleLogger";
+export * from "./resourceManager";
+export * from "./event/eventManager";
 import iocHelper from "./ioc/iocHelper";
-import appHelper from "./helpers/appHelper";
+import appHelper from "./application/appHelper";
 import routerHelper from "./helpers/routerHelper";
 import domHelper from "./helpers/domHelper";
 

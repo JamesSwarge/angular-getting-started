@@ -1,6 +1,16 @@
+import { IAppConfig } from "./iappConfig";
+import { IInjector } from "../ioc/iinjector";
+
 class AppHelper {
     public injector: IInjector = null;
     public config: IAppConfig = null;
+
+    public getConfig(): any {
+        if (!this.config) {
+            throw "Config was not set in appHelper";
+        }
+        return this.config;
+    }
     public setConfig(config: IAppConfig) {
         this.config = config;
     }
@@ -12,12 +22,3 @@ class AppHelper {
 
 let appHelper = new AppHelper();
 export default appHelper;
-
-export interface IInjector {
-    get(type: any): any;
-}
-
-
-export interface IAppConfig {
-    rootApi: string;
-}

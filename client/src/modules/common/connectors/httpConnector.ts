@@ -4,7 +4,7 @@ import "rxjs/add/operator/map";
 import { IConnector } from "./iconnector";
 import { Promise, PromiseFactory } from "./../models/promise";
 //import appConfig from "./appConfig";
-import appHelper from "./../helpers/appHelper";
+import appHelper from "./../application/appHelper";
 
 export class HttpConnector implements IConnector {
     public get(url: string): Promise {

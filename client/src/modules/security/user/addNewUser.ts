@@ -6,11 +6,11 @@ import { BasePage } from "../../../modules/common/index";
 @Component({
     templateUrl: "src/modules/security/user/addNewUser.html",
 })
-export class AddNewUser extends BasePage {
+export class AddNewUser extends BasePage<AddNewUserModel> {
     private userService: UserService;
-    public model: AddNewUserModel = new AddNewUserModel();
     constructor(router: Router, userService: UserService) {
         super(router);
+        this.model = new AddNewUserModel();
         this.userService = userService;
     }
     protected onReady() {

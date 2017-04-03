@@ -1,16 +1,14 @@
 import { Router } from "@angular/router";
-import { AfterViewInit } from "@angular/core";
-export class BasePage implements AfterViewInit {
+import { BaseComponent } from "./baseComponent";
+export class BasePage<Model> extends BaseComponent {
     protected router: Router;
+    protected model: Model;
     constructor(router: Router) {
+        super()
         this.router = router;
     }
-    ngAfterViewInit() {
-        this.onReady();
-    }
-    protected onReady() { }
     protected navigate(url: string, ...options: Array<any>) {
-        let params = options||[];
+        let params = options || [];
         params.unshift(url);
         this.router.navigate(params);
     }
