@@ -6,7 +6,8 @@ import objectHelper from "./helpers/objectHelper";
 //import configHelper from "../helpers/configHelper";
 import userProfileHelper from "./helpers/userProfileHelper";
 import { IoCNames } from "./ioc/enum";
-import {IResourceManager} from "./iresourceManager"; 
+import {IResourceManager} from "./iresourceManager";
+import {IConnector} from "./connectors/iconnector"; 
 
 
 export class ResourceManager implements IResourceManager {
@@ -40,7 +41,7 @@ export class ResourceManager implements IResourceManager {
         let def = PromiseFactory.create();
         let lang: string = userProfileHelper.getLang();
         let resourcePath = String.format("{0}{1}.{2}.json", appHelper.getConfig().localeUrl, moduleName, lang);
-        let connector = window.ioc.resolve(IoCNames.IConnector);
+        let connector:IConnector = window.ioc.resolve(IoCNames.IConnector);
         let self: ResourceManager = this;
         connector.getJSON(resourcePath).then(function (data: any) {
             self.resources.set(moduleName, data);

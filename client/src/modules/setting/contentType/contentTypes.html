@@ -1,8 +1,7 @@
 <page>
 	<page-header>
-        Content type
-		<!--{{i18n.setting.contentTypes.title}}
-		<page-actions class="pull-right" [actions]="model.actions"></page-actions>-->
+		{{i18n.setting.contentTypes.title}}
+		<!--<page-actions class="pull-right" [actions]="model.actions"></page-actions>-->
 	</page-header>
 	<page-content>
 		<grid [eventKey]="model.eventKey" [options]="model.options" (onItemDeleteClicked)="onDeleteItemClicked($event)" (onItemEditClicked)="onEditItemClicked($event)"></grid>

@@ -1,17 +1,18 @@
 //import { HttpConnector } from "../modules/common/index";
-import { IAppConfig } from "../modules/common/index";
+import { IAppConfig, LANG, Locale } from "../modules/common/index";
 import { DefaultLayout } from "../themes/default/defaultLayout";
 import modules from "./modules";
 import helperFacade from "../modules/common/index";
 import ioc from "./ioc";
-import {LANG} from "../modules/common/index";
+
 //import { IoCNames, IoCLifeCycle } from "../modules/common/index";
 //import { UserService } from "../modules/security/_share/services/userService";
 let appConfig: IAppConfig = {
-    localization:{
-        lang: LANG.EN
+    localization: {
+        lang: LANG.EN,
+        files: [Locale.Setting]
     },
-    localeUrl:"/resources/locales/",
+    localeUrl: "/src/resources/locales/",
     rootApi: "http://localhost:3000/api/",
     ioc: ioc,
     layout: DefaultLayout,

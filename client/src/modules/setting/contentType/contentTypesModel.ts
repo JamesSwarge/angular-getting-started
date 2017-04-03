@@ -6,9 +6,9 @@ export class ContentTypesModel {
     constructor(resourceHelper: any) {
         this.options = {
             columns: [
-                { field: "name", title: "setting.contentTypes.grid.name" },
-                { field: "key", title: "setting.contentTypes.grid.name" },
-                { field: "description", title: "setting.contentTypes.grid.description" }
+                { field: "name", title: resourceHelper.resolve("setting.contentTypes.grid.name") },
+                { field: "key", title: resourceHelper.resolve("setting.contentTypes.grid.name") },
+                { field: "description", title: resourceHelper.resolve("setting.contentTypes.grid.description") }
             ],
             data: [],
             enableEdit: true,

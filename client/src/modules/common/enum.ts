@@ -1,3 +1,9 @@
+export const LoadingIndicatorEvent = {
+    Show: "show",
+    Hide: "hide"
+};
+
+
 export const AuthenticatedEvent = {
     AuthenticationChanged: "AuthenticationChanged"
 };
@@ -33,4 +39,8 @@ export const HttpCode = {
     NotFound: 404,
     UnAuthorized: 401,
     BadRequest: 400
+};
+
+export const Locale = {
+    Setting: "setting"
 };

@@ -6,6 +6,7 @@ export interface IAppConfig {
     layout: any;
     routes: Array<any>;
 }
-export interface ILocalization{
-    lang:string;
+export interface ILocalization {
+    lang: string;
+    files: Array<string>;
 }
