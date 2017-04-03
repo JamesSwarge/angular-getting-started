@@ -143,6 +143,13 @@ Array.prototype.removeItem = function (item) {
 
 /* Extension for string*/
 String.empty = "";
+String.toPascalCase = function (str) {
+    if (!str) { return String.empty; }
+    return str.toPascalCase();
+};
+String.prototype.toPascalCase = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+};
 /*
 Format the string. Using String.Format("{0}-{1}","1","2")="1-2"
 */

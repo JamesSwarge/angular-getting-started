@@ -1,4 +1,6 @@
 export class HelperFacade {
+    public domHelper: any = null;
     public iocHelper: any = null;
     public appHelper: any = null;
+    public routeHelper: any = null;
 }

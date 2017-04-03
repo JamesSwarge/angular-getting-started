@@ -11,7 +11,7 @@ let routes: Routes = [
     { path: "editUser/:userId", component: EditUser }
 ];
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
 export class RouteConfig { }

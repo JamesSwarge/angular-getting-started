@@ -3,8 +3,9 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { HttpModule, Http } from "@angular/http";
 import { RouterModule } from "@angular/router";
-import {ReflectiveInjector} from "@angular/core";
-import {CommonModule} from "./../common/commonModule";
+import { ReflectiveInjector} from "@angular/core";
+import {CommonModule} from "@angular/common";
+import { AppCommon } from "./../common/commonModule";
 import { DefaultLayout } from "../../defaultLayout";
 import { DefaultPage } from "../../defaultPage";
 import { RouteConfig } from "./routeConfig";
@@ -14,9 +15,9 @@ import { EditUser } from "./user/editUser";
 import { UserSummary } from "./_share/components/userSummary";
 import { RedColor } from "./_share/components/redColor";
 @NgModule({
-    imports: [BrowserModule, FormsModule, HttpModule, CommonModule, RouterModule, RouteConfig],
+    imports: [CommonModule, FormsModule, AppCommon, RouteConfig],
     declarations: [
-        DefaultLayout, DefaultPage, Users, AddNewUser, EditUser,UserSummary, RedColor
+        DefaultLayout, DefaultPage, Users, AddNewUser, EditUser, UserSummary, RedColor
     ],
     bootstrap: [DefaultLayout],
     providers: [],
