@@ -7,8 +7,8 @@ import { BasePage, IoCNames } from "../../common/index";
 import { ContentTypesModel } from "./contentTypesModel";
 import { ISettingService } from "../_share/services/isettingService";
 // import { Grid, PageActions, Page } from "../../../common/directive";
-// import { PageAction } from "../../../common/models/ui";
-// import route from "../_share/config/route";
+import { PageAction } from "../../common/index";
+import route from "../_share/config/route";
 @Component({
     templateUrl: "src/modules/setting/contentType/contentTypes.html"
 })
@@ -18,13 +18,13 @@ export class ContentTypes extends BasePage<ContentTypesModel> {
         let self = this;
         self.model = new ContentTypesModel(self.i18nHelper);
         self.load();
-        //this.model.addPageAction(new PageAction("btnAddNew", "setting.contentTypes.addNewAction", () => self.onAddNewItemClicked()));
+        this.model.addPageAction(new PageAction("btnAddNew", "setting.contentTypes.addNewAction", () => { self.onAddNewItemClicked(); }));
     }
     private onAddNewItemClicked() {
-        //this.router.navigate([route.setting.addContentType.name]);
+        this.navigate(route.contentType.addContentType.name);
     }
     public onEditItemClicked(event: any) {
-        //this.router.navigate([route.setting.editContentType.name, { id: event.item.id }]);
+        this.navigate([route.contentType.addContentType.name, { id: event.item.id }]);
     }
     public onDeleteItemClicked(event: any) {
         // let self = this;

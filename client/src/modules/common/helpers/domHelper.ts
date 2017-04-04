@@ -6,7 +6,6 @@ export default domHelper;
 function createStyle(src: string, callback: any = null) {
     var style = document.createElement('link');
     style.onload = function () {
-        console.log(src);
         if (callback) {
             callback();
         }
@@ -18,7 +17,6 @@ function createStyle(src: string, callback: any = null) {
 function createScript(src: string, callback: any = null) {
     var script = document.createElement('script');
     script.onload = function () {
-        console.log(src);
         if (callback) {
             callback();
         }

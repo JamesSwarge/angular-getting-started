@@ -7,8 +7,13 @@ export * from "./models/promise";
 export * from "./models/ui";
 export * from "./application/iappConfig";
 export * from "./enum";
+export * from "./baseModule";
+
 export * from "./services/logger/consoleLogger";
 export * from "./services/baseService";
+export * from "./services/cache/cacheService";
+export * from "./services/routeService";
+
 export * from "./resourceManager";
 export * from "./iresourceManager";
 export * from "./event/eventManager";

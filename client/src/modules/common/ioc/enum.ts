@@ -4,7 +4,9 @@ export const IoCNames = {
     IEventManager: "IEventManager",
     IResource: "IResource",
     ILogger: "ILogger",
-    ISettingService: "ISettingService"
+    ISettingService: "ISettingService",
+    ICacheService: "ICacheService",
+    IRouteService:"IRouteService"
 };
 
 export enum IoCLifeCycle {

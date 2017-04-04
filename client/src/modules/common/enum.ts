@@ -44,3 +44,8 @@ export const HttpCode = {
 export const Locale = {
     Setting: "setting"
 };
+
+export enum FormMode {
+    AddNew,
+    Edit
+};

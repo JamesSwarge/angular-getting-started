@@ -1,6 +1,7 @@
 declare interface Window {
     ioc: any;
     jQuery: any;
+    Sys: any;
 }
 
 interface StringConstructor {
@@ -10,8 +11,13 @@ interface StringConstructor {
     firstCharToLower(str: string): string;
     toPascalCase(str: string): string;
 }
-declare interface Array<T> {
+interface Array<T> {
     firstOrDefault(callback: any): any;
     removeItem(item: any): Array<any>;
     any(callback: any): boolean;
+    toString(saperator?: string): string;
+}
+
+interface Route {
+    name?: string;
 }

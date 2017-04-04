@@ -1,11 +1,11 @@
 import { IStorage } from "./istorage";
-let sessionStorage: IStorage = {
+let storage: IStorage = {
     exist: exist,
     get: get,
     set: set,
     remove: remove
 };
-export default sessionStorage;
+export default storage;
 
 function exist(key: string): boolean {
     return window.sessionStorage.getItem(key) != null;

@@ -4,7 +4,7 @@
         <horizal-form>
             <form-input [label]="'First name'" [(value)]="model.firstName"></form-input>
             <form-input [label]="'Last name'" [(value)]="model.lastName"></form-input>
-            <form-button [label]="'Cancel'" (click)="onCancelClicked($event)"></form-button>
+            <form-default-button label="Cancel" (click)="onCancelClicked($event)"></form-default-button>
             <form-primary-button [label]="'Save'" (click)="onSaveClicked($event)"></form-primary-button>
         </horizal-form>
     </page-content>

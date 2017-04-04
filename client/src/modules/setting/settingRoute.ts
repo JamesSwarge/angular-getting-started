@@ -1,13 +1,16 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { ContentTypes } from "./contentType/contentTypes";
-let routes: Routes = [
+import { AddOrUpdateContentType } from "./contentType/addOrUpdateContentType";
+import route from "./_share/config/route";
+let routeConfigs: Routes = [
     { path: "", redirectTo: "contentTypes", pathMatch: "full" },
-    { path: "contentTypes", component: ContentTypes }
+    { path: route.contentType.contentTypes.path, component: ContentTypes },
+    { path: route.contentType.addContentType.path, component: AddOrUpdateContentType }
 ];
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
+    imports: [RouterModule.forChild(routeConfigs)],
     exports: [RouterModule],
-    
+
 })
 export class SettingRoute { }

@@ -59,6 +59,9 @@ Sys = {
             return "";
         }
     },
+    isString: function (object) {
+        return typeof object == "string";
+    },
     isFunction: function (object) {
         return typeof object == "function";
     },
@@ -139,6 +142,11 @@ Array.prototype.removeItem = function (item) {
         this.splice(index, 1);
     }
     return this;
+};
+
+Array.prototype.toString = function (separator) {
+    separator = separator || "";
+    return this.join(separator);
 };
 
 /* Extension for string*/

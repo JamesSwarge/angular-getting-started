@@ -3,7 +3,7 @@ import { Router } from "@angular/router";
 import { IUserService } from "../../../modules/security/_share/services/iuserService";
 import { BasePage } from "../../../modules/common/index";
 import { IoCNames } from "../../../modules/common/index";
-
+import routes from "../securityRoute";
 @Component({
     templateUrl: "src/modules/security/user/users.html"
 })
@@ -19,13 +19,16 @@ export class Users extends BasePage<any> {
         });
     }
     public onEditUserClicked(userId: string) {
-        this.navigate("/editUser", userId);
+        let option = {
+            name: routes.user.editUser.name,
+            userId: userId
+        };
+        this.navigate(option);
     }
     public onSummaryClicked(user: any) {
         this.selectedUser = user;
     }
     public onFirstNameChanged(newname: string) {
-        console.log(newname);
         this.selectedUser.firstName = newname;
     }
 }

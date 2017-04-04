@@ -1,7 +1,10 @@
 import { PromiseFactory } from "../models/promise";
 import { CACHE_CONSTANT } from "./cache/cacheService";
-import cacheService from "./cache/cacheService";
+import { ICacheService } from "./cache/icacheService";
 import { IAuthService } from "./iauthService";
+import { IoCNames } from "../ioc/enum";
+
+let cacheService: ICacheService = window.ioc.resolve(IoCNames.ICacheService);
 let authService: IAuthService = {
     getUserProfile: getUserProfile,
     setAuth: setAuth,
