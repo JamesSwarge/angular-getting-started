@@ -1,12 +1,8 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { BasePage, IoCNames } from "../../common/index";
-// import { Component } from "angular2/core";
-// import { Router } from "angular2/router";
-// import { BasePage } from "../../../common/models/ui";
 import { ContentTypesModel } from "./contentTypesModel";
 import { ISettingService } from "../_share/services/isettingService";
-// import { Grid, PageActions, Page } from "../../../common/directive";
 import { PageAction } from "../../common/index";
 import route from "../_share/config/route";
 @Component({
@@ -24,7 +20,7 @@ export class ContentTypes extends BasePage<ContentTypesModel> {
         this.navigate(route.contentType.addContentType.name);
     }
     public onEditItemClicked(event: any) {
-        this.navigate([route.contentType.addContentType.name, { id: event.item.id }]);
+        this.navigate({ name: route.contentType.editContentType.name, id: event.item.id });
     }
     public onDeleteItemClicked(event: any) {
         // let self = this;

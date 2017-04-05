@@ -42,7 +42,8 @@ export const HttpCode = {
 };
 
 export const Locale = {
-    Setting: "setting"
+    Setting: "setting",
+    Common:"common"
 };
 
 export enum FormMode {

@@ -6,7 +6,8 @@ import route from "./_share/config/route";
 let routeConfigs: Routes = [
     { path: "", redirectTo: "contentTypes", pathMatch: "full" },
     { path: route.contentType.contentTypes.path, component: ContentTypes },
-    { path: route.contentType.addContentType.path, component: AddOrUpdateContentType }
+    { path: route.contentType.addContentType.path, component: AddOrUpdateContentType },
+    { path: route.contentType.editContentType.path, component: AddOrUpdateContentType }
 ];
 @NgModule({
     imports: [RouterModule.forChild(routeConfigs)],

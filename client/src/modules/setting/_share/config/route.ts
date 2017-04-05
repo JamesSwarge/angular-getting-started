@@ -10,6 +10,10 @@ function getRoute() {
             addContentType: {
                 name: "setting.contentType.addContentType",
                 path: "contentType/addContentType"
+            },
+            editContentType: {
+                name: "setting.contentType.editContentType",
+                path: "contentType/:id"
             }
         }
     };

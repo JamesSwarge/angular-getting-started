@@ -2,12 +2,8 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { Component } from "@angular/core";
 import { BasePage, FormMode, IoCNames } from "../../common/index";
 import { AddOrUpdateContentTypeModel } from "./addOrUpdateContentTypeModel";
-//import { SelectPermission, Page } from "../../../common/directive";
-//import { ValidationDirective, FormStatusToggle, FormSelect, Form, FormTextInput, FormFooter, FormTextArea, FormPermissionSelect } from "../../../common/directive";
 import { ISettingService } from "../_share/services/isettingService";
-//import { FormMode, Guid } from "../../../common/enum";
 import route from "../_share/config/route";
-//import { Parameters } from "../_share/directives/parameters";
 
 @Component({
     templateUrl: "src/modules/setting/contentType/addOrUpdateContentType.html"
