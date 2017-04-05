@@ -41,12 +41,18 @@ export const HttpCode = {
     BadRequest: 400
 };
 
-export const Locale = {
-    Setting: "setting",
-    Common:"common"
-};
-
 export enum FormMode {
     AddNew,
     Edit
+};
+
+export const Locale = {
+    Setting: "setting",
+    Common: "common"
+};
+
+export const ModuleNames = {
+    Security: "security",
+    Setting: "setting",
+    Common: "common"
 };

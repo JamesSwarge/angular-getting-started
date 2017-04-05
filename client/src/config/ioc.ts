@@ -12,6 +12,5 @@ let ioc = [
     { name: IoCNames.ISettingService, instance: SettingService, lifeCycle: IoCLifeCycle.Singleton },
     { name: IoCNames.ICacheService, instance: CacheService, lifeCycle: IoCLifeCycle.Singleton },
     { name: IoCNames.IRouteService, instance: RouteService, lifeCycle: IoCLifeCycle.Singleton }
-    //{ name: IoCNames.IApplicationState, instanceFn: ApplicationStateFactory.getInstance(), type: IoCLifeCycle.Singleton },
 ];
 export default ioc;

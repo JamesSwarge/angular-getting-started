@@ -1,7 +1,7 @@
 import { ElementRef, Input, Output, Component, EventEmitter } from "@angular/core";
 import { Http } from "@angular/http";
 import { EventManager } from "../../event";
-import { ValidationEvent } from "../../enum";
+import { ValidationEvent } from "../../exception/enum";
 import { BaseControl } from "../../models/ui";
 import { GridModel } from "./gridModel";
 @Component({

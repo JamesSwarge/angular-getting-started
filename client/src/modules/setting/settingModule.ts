@@ -1,5 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import { AppCommon, BaseModule } from "./../common/index";
+import { ModuleNames, AppCommon, BaseModule } from "./../common/index";
 import { FormsModule } from "@angular/forms";
 import { ContentTypes } from "./contentType/contentTypes";
 import { AddOrUpdateContentType } from "./contentType/addOrUpdateContentType";
@@ -13,8 +13,7 @@ import route from "./_share/config/route";
 })
 export class SettingModule extends BaseModule {
     constructor() {
-        super();
-        this.name = "setting";
+        super(ModuleNames.Setting);
         this.registerModuleRoutes(route);
     }
 }
