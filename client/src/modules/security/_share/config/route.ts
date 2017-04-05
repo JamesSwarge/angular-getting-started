@@ -12,6 +12,10 @@ function getRoute() {
             permissions: {
                 name: "security.permission.permissions",
                 path: "permissions"
+            },
+            addPermission: {
+                name: "security.permission.addPermission",
+                path: "permissions/addPermission"
             }
         }
     };

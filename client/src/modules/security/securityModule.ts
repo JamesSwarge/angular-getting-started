@@ -16,10 +16,11 @@ import routes from "./_share/config/route";
 
 /*Permisison */
 import { Permissions } from "./permission/permissions";
+import { AddOrUpdatePermission } from "./permission/addOrUpdatePermission";
 
 @NgModule({
     imports: [CommonModule, FormsModule, AppCommon, SecurityRoute],
-    declarations: [Permissions, Users, AddNewUser, EditUser, UserSummary, RedColor],
+    declarations: [AddOrUpdatePermission, Permissions, Users, AddNewUser, EditUser, UserSummary, RedColor],
     bootstrap: [Users],
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
