@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { BasePage, PageAction, IoCNames } from "@app/common";
 import { PermissionsModel } from "./permissionsModel";
-import { IPermissionService } from "../_share/services/ipermissionService";
+import { IPermissionService } from "@app/security";
 import route from "../_share/config/route";
 @Component({
     templateUrl: "src/modules/security/permission/permissions.html"

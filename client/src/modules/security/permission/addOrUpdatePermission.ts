@@ -2,7 +2,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { Component } from "@angular/core";
 import { BasePage, FormMode, IoCNames } from "@app/common";
 import { AddOrUpdatePermissionModel } from "./addOrUpdatePermissionModel";
-import { IPermissionService } from "../_share/services/ipermissionService";
+import { IPermissionService } from "@app/security";
 import route from "../_share/config/route";
 
 @Component({

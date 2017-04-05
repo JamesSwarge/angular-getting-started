@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { BasePage } from "@app/common";
-import { UserService } from "../_share/services/userService";
+import { UserService } from "@app/security";
 import { AddNewUserModel } from "./addNewUserModel";
 @Component({
     templateUrl: "src/modules/security/user/addNewUser.html",

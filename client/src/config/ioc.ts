@@ -1,7 +1,8 @@
 import { IoCNames, IoCLifeCycle, HttpConnector, ConsoleLogger, EventManager, ResourceManager, CacheService, RouteService } from "@app/common";
-import { UserService } from "../modules/security/_share/services/userService";
-import { SettingService } from "../modules/setting/_share/services/settingService";
-import { PermissionService } from "@app/security";
+import { SettingService } from "@app/setting";
+// import { UserService } from "../modules/security/_share/services/userService";
+// import { SettingService } from "../modules/setting/_share/services/settingService";
+import { UserService, PermissionService } from "@app/security";
 
 let ioc = [
     { name: IoCNames.IUserService, instance: UserService, lifeCycle: IoCLifeCycle.Singleton },
