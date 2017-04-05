@@ -7,7 +7,7 @@ import ioc from "./ioc";
 let appConfig: IAppConfig = {
     localization: {
         lang: LANG.EN,
-        files: [Locale.Setting, Locale.Common]
+        files: [Locale.Common, Locale.Setting, Locale.Security]
     },
     localeUrl: "/src/resources/locales/",
     rootApi: "http://localhost:3000/api/",

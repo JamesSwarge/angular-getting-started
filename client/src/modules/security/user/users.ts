@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { IoCNames, BasePage } from "@app/common";
 import { IUserService } from "../_share/services/iuserService";
-import routes from "../securityRoute";
+import routes from "../_share/config/route";
 @Component({
     templateUrl: "src/modules/security/user/users.html"
 })

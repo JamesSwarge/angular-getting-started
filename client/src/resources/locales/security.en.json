@@ -1,0 +1,11 @@
+{
+    "permissions": {
+        "title": "Permissions",
+        "addPermissionAction": "Add Permission",
+        "grid": {
+            "name": "Name",
+            "key": "Key",
+            "description": "Description"
+        }
+    }
+}

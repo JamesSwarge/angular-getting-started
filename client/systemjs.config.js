@@ -5,6 +5,7 @@
         paths: {
             npm: "node_modules/",
             "@app/common":["src/modules/common/index"],
+            "@app/security":["src/modules/security/index"],
             "@app/themes/default":["src/themes/default/defaultLayout"]
         },
         map: {
@@ -20,7 +21,6 @@
             '@angular/router': 'npm@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm@angular/forms/bundles/forms.umd.js',
             'rxjs': 'npmrxjs',
-            /*'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',*/
             'ts': 'npm@plugin-typescript@4.0.10/lib/plugin.js',
             'typescript': 'npm@typescript@2.0.3/lib/typescript.js',
             

@@ -48,7 +48,8 @@ export enum FormMode {
 
 export const Locale = {
     Setting: "setting",
-    Common: "common"
+    Common: "common",
+    Security: "security"
 };
 
 export const ModuleNames = {
