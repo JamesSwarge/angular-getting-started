@@ -1,4 +1,4 @@
-import { IoCNames } from "../../common/index";
+import { IoCNames } from "@app/common";
 export class ContentTypesModel {
     public options: any = {};
     public eventKey: string = "contenttypes_ondatasource_changed";

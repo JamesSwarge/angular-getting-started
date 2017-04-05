@@ -1,9 +1,8 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import { BasePage, IoCNames } from "../../common/index";
+import { BasePage, PageAction, IoCNames } from "@app/common";
 import { ContentTypesModel } from "./contentTypesModel";
 import { ISettingService } from "../_share/services/isettingService";
-import { PageAction } from "../../common/index";
 import route from "../_share/config/route";
 @Component({
     templateUrl: "src/modules/setting/contentType/contentTypes.html"

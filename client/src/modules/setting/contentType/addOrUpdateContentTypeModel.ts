@@ -1,4 +1,4 @@
-import { BaseModel, ValidationException } from "../../common/index";
+import { BaseModel, ValidationException } from "@app/common";
 export class AddOrUpdateContentTypeModel extends BaseModel {
     public id: string = String.empty;
     public name: string = String.empty;

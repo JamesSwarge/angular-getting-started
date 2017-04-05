@@ -1,6 +1,6 @@
 import { Router, ActivatedRoute } from "@angular/router";
 import { Component } from "@angular/core";
-import { BasePage, FormMode, IoCNames } from "../../common/index";
+import { BasePage, FormMode, IoCNames } from "@app/common";
 import { AddOrUpdateContentTypeModel } from "./addOrUpdateContentTypeModel";
 import { ISettingService } from "../_share/services/isettingService";
 import route from "../_share/config/route";

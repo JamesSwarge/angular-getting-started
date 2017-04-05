@@ -1,4 +1,4 @@
-import { IConnector, IoCNames, PromiseFactory, Promise, BaseService } from "../../../../modules/common/index";
+import { IConnector, IoCNames, PromiseFactory, Promise, BaseService } from "@app/common";
 import { ISettingService } from "./isettingService";
 export class SettingService extends BaseService implements ISettingService {
     private iconnector: IConnector;

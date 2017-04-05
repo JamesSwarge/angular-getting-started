@@ -1,7 +1,5 @@
-import { PromiseFactory, Promise } from "../../../../modules/common/index";
-import { IConnector } from "../../../../modules/common/index";
+import { IoCNames, BaseService, IConnector, PromiseFactory, Promise } from "@app/common";
 import { IUserService } from "./iuserService";
-import { IoCNames, BaseService } from "../../../../modules/common/index";
 export class UserService extends BaseService implements IUserService {
     private iconnector: IConnector;
     public getUsers(): Promise {

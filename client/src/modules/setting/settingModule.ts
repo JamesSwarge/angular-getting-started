@@ -1,5 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import { ModuleNames, AppCommon, BaseModule } from "./../common/index";
+import { ModuleNames, AppCommon, BaseModule } from "@app/common";
 import { FormsModule } from "@angular/forms";
 import { ContentTypes } from "./contentType/contentTypes";
 import { AddOrUpdateContentType } from "./contentType/addOrUpdateContentType";

@@ -1,7 +1,8 @@
-import { IAppConfig, LANG, Locale } from "../modules/common/index";
-import { DefaultLayout } from "../themes/default/defaultLayout";
+import { IAppConfig, LANG, Locale } from "@app/common";
+import helperFacade from "@app/common";
+import { DefaultLayout } from "@app/themes/default";
+
 import modules from "./modules";
-import helperFacade from "../modules/common/index";
 import ioc from "./ioc";
 let appConfig: IAppConfig = {
     localization: {

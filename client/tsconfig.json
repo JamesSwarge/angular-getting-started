@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es6",
     "module": "commonjs",
     "sourceMap": true,
@@ -8,7 +9,11 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "paths": {
+        "@app/common":["src/modules/common/index"],
+        "@app/themes/default":["src/themes/default/defaultLayout"]
+    }
   },
   "exclude": [
     "node_modules",

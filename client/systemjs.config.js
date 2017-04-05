@@ -4,6 +4,8 @@
         baseUrl: '.',
         paths: {
             npm: "node_modules/",
+            "@app/common":["src/modules/common/index"],
+            "@app/themes/default":["src/themes/default/defaultLayout"]
         },
         map: {
             "src": "src",

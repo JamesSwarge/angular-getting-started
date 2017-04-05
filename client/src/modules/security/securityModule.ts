@@ -5,13 +5,13 @@ import { HttpModule, Http } from "@angular/http";
 import { RouterModule } from "@angular/router";
 import { ReflectiveInjector } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ModuleNames, AppCommon, BaseModule } from "./../common/index";
+import { ModuleNames, AppCommon, BaseModule } from "@app/common";
 import { SecurityRoute } from "./securityRoute";
+import { UserSummary } from "./_share/components/userSummary";
+import { RedColor } from "./_share/components/redColor";
 import { Users } from "./user/users";
 import { AddNewUser } from "./user/addNewUser";
 import { EditUser } from "./user/editUser";
-import { UserSummary } from "./_share/components/userSummary";
-import { RedColor } from "./_share/components/redColor";
 import routes from "./securityRoute";
 @NgModule({
     imports: [CommonModule, FormsModule, AppCommon, SecurityRoute],
