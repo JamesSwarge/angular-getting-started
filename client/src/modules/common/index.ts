@@ -24,10 +24,12 @@ import iocHelper from "./ioc/iocHelper";
 import appHelper from "./application/appHelper";
 import routerHelper from "./helpers/routerHelper";
 import domHelper from "./helpers/domHelper";
+import moduleHelper from "./helpers/moduleHelper";
 
 let helperFacade: HelperFacade = new HelperFacade();
 helperFacade.iocHelper = iocHelper;
 helperFacade.appHelper = appHelper;
 helperFacade.routeHelper = routerHelper;
 helperFacade.domHelper = domHelper;
+helperFacade.moduleHelper = moduleHelper;
 export default helperFacade;
