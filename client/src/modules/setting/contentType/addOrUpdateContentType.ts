@@ -28,6 +28,7 @@ export class AddOrUpdateContentType extends BasePage<AddOrUpdateContentTypeModel
     public onSaveClicked(event: any): void {
         let self = this;
         let settingService: ISettingService = window.ioc.resolve(IoCNames.ISettingService);
+        if (!this.model.validated()) { return; }
         if (self.mode === FormMode.AddNew) {
             settingService.createContentType(this.model).then(function () {
                 self.navigate(route.contentType.contentTypes.name);

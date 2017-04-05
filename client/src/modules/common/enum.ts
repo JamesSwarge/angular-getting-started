@@ -31,9 +31,9 @@ export const Guid = {
     Empty: "00000000-0000-0000-0000-000000000000"
 };
 
-export const ValidationEvent = {
-    ValidationFail: "ValidationFail"
-};
+// export const ValidationEvent = {
+//     ValidationFail: "ValidationFail"
+// };
 
 export const HttpCode = {
     NotFound: 404,
